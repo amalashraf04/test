@@ -7,7 +7,7 @@ const app = new express()
 
 require('dotenv').config()
 
-require('./middleware/mongoDB') //to init mongoDB
+const mongoose= require('./middleware/mongoDB') //to init mongoDB
 
 
 app.use(cors()) //to connect frontend and backend without any disturbance

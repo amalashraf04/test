@@ -65,7 +65,7 @@ router.delete('/student/:id', async (req, res) => {
 // student update 
 
 
-router.post('/student/:id', async (req, res) => {
+router.put('/student/:id', async (req, res) => {
     try {
 
         let id = req.params.id
@@ -73,7 +73,7 @@ router.post('/student/:id', async (req, res) => {
         //     name: req.body.name,
         //     age: req.body.age
         // }
-        
+        console.log(id)
         let updateData = req.body
         let updateStudent = await DATA.findByIdAndUpdate({ _id:id }, {$set:updateData})
        res.send(updateStudent)

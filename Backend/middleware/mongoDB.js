@@ -8,3 +8,5 @@ mongoose.connect('mongodb+srv://amalashraf04:aamssanamm1234@cluster0.sc2qvv5.mon
   .catch((err) => {
     console.error('Error connecting to MongoDB', err);
   });
+  
+  module.exports=mongoose
